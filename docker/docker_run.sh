@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#if [ $1 == "" ]
+#then
+	#echo "First argument should be IP of host machine for the MQTT broker"
+#fi
+
 docker run -d \
 	--restart=always \
 	--name=robotarium_mqtt_broker \
